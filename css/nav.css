@@ -89,7 +89,7 @@ nav .mobile-dropdown {
 .mobile-dropdown span {
     background-color: var(--textcolor1);
     width: 100%;
-    height: 4px;
+    height: 1px;
 }
 .mobile-dropdown a {
     width: 100%;

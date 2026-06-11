@@ -35,7 +35,7 @@
     font-size: 2.5rem;
     font-weight: 600;
 }
-.textbox {
+.hero .textbox {
     background-color: var(--bgcolor);
     padding: 3rem;
     aspect-ratio: 3/2;
@@ -45,6 +45,9 @@
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+}
+.hero .textbox h1 a {
+    color: var(--textcolor);
 }
 
 .hero .grid {
@@ -63,8 +66,61 @@
 .hero .grid .card img {
     width: 100%;
     margin-bottom: 10px;
+    aspect-ratio: 6/8;
 }
 .hero .grid .card p {
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.hero .textbox h1:hover,
+.hero .card p:hover {
+    color: var(--accent1);
+}
+
+div:has(.about-section) {
+    background-color: var(--accent1faint);
+    max-width: none;
+    padding-top: 2.5rem;
+
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.about-container img {
+    aspect-ratio: 1/1;
+    height: 500px;
+    width: auto;
+    margin-right: 4rem;
+}
+
+.about-container .textbox {
+    background-color: var(--bgcolor);
+    padding: 3rem;
+    aspect-ratio: 1/1;
+    height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+
+    transform: translate(3rem, 0); 
+}
+.about-container .textbox h1 {
+    color: var(--textcolor);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about-container .button {
+    width: fit-content;
 }

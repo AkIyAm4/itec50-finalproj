@@ -13,7 +13,7 @@
     --textcolor2: white;
     --accent1: #2e6b3e;
     --accent1lighter: #3b8a50;
-    --accent1faint: #d5f4dd;
+    --accent1faint: #e4f8e9;
     --offwhite: #d2d2d2;
 }
 
@@ -90,7 +90,7 @@ body > * > * {
     display: inline-block;
     width: 100%;
     background-color: var(--textcolor1);
-    height: 2px;
+    height: 1px;
     margin: 1rem 0;
 }
 
