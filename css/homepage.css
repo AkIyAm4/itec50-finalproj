@@ -3,7 +3,8 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-.hero a {
+.hero a,
+.categories-section a {
     text-decoration: none;
     color: var(--accent1);
 }
@@ -49,12 +50,12 @@
     color: var(--textcolor);
 }
 
-.hero .grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
 }
-.hero .grid .card {
+.grid .card {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -62,18 +63,18 @@
     text-align: center;
     gap: 10px;
 }
-.hero .grid .card img {
+.grid .card img {
     width: 100%;
     margin-bottom: 10px;
     aspect-ratio: 6/8;
 }
-.hero .grid .card p {
+.grid .card p {
     font-size: 1.6rem;
     font-weight: 600;
 }
 
 .hero .textbox h1:hover,
-.hero .card p:hover {
+.card p:hover {
     color: var(--accent1);
 }
 
@@ -116,4 +117,24 @@ div:has(.about-section) {
     color: var(--textcolor);
     font-size: 3rem;
     font-weight: 600;
+}
+
+.categories-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding-top: 3.5rem;
+}
+.categories-section h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.categories-section .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.categories-section .card {
+    justify-content: start;
 }
