@@ -42,3 +42,14 @@
 .categories .grid p:hover {
     color: var(--accent1);
 }
+
+@media screen and (max-width: 800px) {
+    .category-header img {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .categories .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

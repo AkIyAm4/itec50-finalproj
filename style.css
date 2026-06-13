@@ -1,7 +1,6 @@
 @import url(/css/globals.css);
 @import url(/css/nav.css);
 @import url(/css/footer.css);
-@import url(/css/reponsiveness.css);
 
 script, style {
     display: none !important;

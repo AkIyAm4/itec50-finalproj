@@ -1,3 +1,6 @@
+nav {
+    z-index: 10;
+}
 nav .upper {
     display: flex;
     justify-content: center;
@@ -99,4 +102,47 @@ nav .mobile-dropdown.active {
     top: 5.1rem;
     transition: top 0.3s ease, opacity 0.3s ease;
     opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    nav .title {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav .upper {
+        padding: 1rem 0;
+    }
+    nav .title {
+        font-size: 2.2rem;
+    }
+    nav .mobile-menu {
+        display: block;
+    }
+    nav .home-btn {
+        display: none;
+    }
+    nav .about-btn,
+    nav .contact-btn {
+        display: none;
+    }
+    nav .lower {
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        font-size: .65rem;
+    }
+    nav .lower a {
+        padding: 8px 12px;
+    }
+    .mobile-dropdown {
+        display: flex;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav .title {
+        font-size: 1.8rem;
+    }
+    nav .mobile-menu {
+        top: .6rem;
+    }
 }
